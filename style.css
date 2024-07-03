@@ -14,7 +14,7 @@
         background-size: cover;
 }
 .bird {
-	height: 5%;
+	height: 10%;
 	width: 10%;
 	position: fixed;
 	top: 40vh;
@@ -64,6 +64,7 @@
             background-color: white;
 	    position: fixed;
 	    z-index: 10;
+	    color: white;
 	    font-size: 3em;
 	    font-weight: 100;
 	    -webkit-text-stroke-width: 2px;
@@ -75,7 +76,7 @@
         }
 #logoutButton:hover {
             background-color: darkgreen;
-	    font-color: white
+	    font-color: white;
         }
 .score_val {
 	color: gold;

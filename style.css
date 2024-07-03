@@ -50,7 +50,7 @@
 	position: fixed;
 	z-index: 10;
 	height: 10vh;
-	font-size: 10vh;
+	font-size: 5vh;
 	font-weight: 100;
 	color: white;
 	-webkit-text-stroke-width: 2px;
@@ -67,8 +67,9 @@
 #logoutButton {
     background-color: black; /* Red background */
     color: white; /* White text */
-    font-size: 0.5em;
-    border-radius: 0.5em;
+    font-size: 10px;
+    font-weight:100;
+    border-radius: 10px;
     border: 2px solid #f44336; /* Matching border */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }

@@ -13,7 +13,7 @@
 }
 
 .bird {
-    height: 10vh; /* Adjust height relative to viewport height */
+    height: 15vh; /* Adjust height relative to viewport height */
     width: auto; /* Automatically adjust width based on height */
     position: fixed;
     top: 40vh; /* Position vertically centered */
@@ -24,7 +24,7 @@
 .pipe_sprite {
     position: fixed;
     top: 40vh; /* Position vertically centered */
-    left: 60vw; /* Initially off-screen */
+    left: 40vw; /* Initially off-screen */
     height: 70vh;
     width: 6vw;
     background: radial-gradient(lightgreen 50%, green);

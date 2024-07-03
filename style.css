@@ -8,14 +8,14 @@
 	height: 100vh;
 	width: 100vw;
 	background: url('images/bg4.jpg') no-repeat center fixed !important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 .bird {
-	height: 100px;
-	width: 130px;
+	height: 8px;
+	width: 110px;
 	position: fixed;
 	top: 40vh;
 	left: 30vw;
@@ -54,7 +54,7 @@
 	font-weight: 100;
 	color: white;
 	-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: black;
 	top: 0;
 	left: 0;
 	margin: 10px;
@@ -65,10 +65,10 @@
 	font-weight: bold;
 }
 #logoutButton {
-    background-color: #f44336; /* Red background */
+    background-color: black; /* Red background */
     color: white; /* White text */
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 0.5em;
+    border-radius: 0.5em;
     border: 2px solid #f44336; /* Matching border */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }

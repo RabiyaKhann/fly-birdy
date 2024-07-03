@@ -68,7 +68,7 @@
 
 #logoutButton {
     padding: 1vh 2vh; /* Responsive padding */
-    background-color: #000; /* Black background */
+    background-color: white; /* Black background */
     font-size: 2vh; /* Responsive font size */
     font-color: white;
     font-weight: 100;

@@ -49,12 +49,12 @@
 .score {
 	position: fixed;
 	z-index: 10;
-	height: 10vh;
+	height: 5vh;
 	font-size: 10vh;
 	font-weight: 100;
 	color: white;
 	-webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: black;
 	top: 0;
 	left: 0;
 	margin: 10px;

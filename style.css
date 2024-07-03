@@ -24,7 +24,7 @@
 .pipe_sprite {
     position: fixed;
     top: 40vh; /* Position vertically centered */
-    left: 40vw; /* Initially off-screen */
+    left: 10vw; /* Initially off-screen */
     height: 70vh;
     width: 6vw;
     background: radial-gradient(lightgreen 50%, green);

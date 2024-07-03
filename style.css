@@ -34,7 +34,7 @@
 	position: absolute;
 	z-index: 10;
 	color: black;
-	top: 30%;
+	top: 50%;
 	left: 50%;
 	font-size: 3vw;
 	transform: translate(-50%, -50%);

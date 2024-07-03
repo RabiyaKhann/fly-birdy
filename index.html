@@ -50,8 +50,40 @@
     <script>
         document.getElementById('logoutButton').addEventListener('click', () => {
             localStorage.removeItem('signedIn');
-            window.location.href = 'signin.html';
-        });
+            window.location.href = 'signin.html';   });
+            document.addEventListener('DOMContentLoaded', (event) => {
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas(); // Initial call to set the size
+
+   
+    const flySound = new Audio('path/to/fly.mp3');
+    const scoreSound = new Audio('path/to/score.mp3');
+
+   
+    function playSound(audio) {
+        audio.currentTime = 0; 
+        audio.play();
+    }
+
+    // Touch event handling for mobile devices
+    canvas.addEventListener('touchstart', () => {
+        playSound(flySound);
+        
+    });
+
+   
+    canvas.addEventListener('click', () => {
+        playSound(flySound);
+    });
+});
     </script>
 </body>
 </html>

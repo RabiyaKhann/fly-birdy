@@ -34,9 +34,9 @@
 	position: absolute;
 	z-index: 10;
 	color: black;
-	top: 30%;
+	top: 50%;
 	left: 50%;
-	font-size: 4em;
+	font-size: 3em;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
@@ -63,6 +63,24 @@
 .score_val {
 	color: gold;
 	font-weight: bold;
+}
+#logoutButton {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #f44336; /* Matching border */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#logoutButton:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    border-color: #d32f2f; /* Darker border on hover */
+}
+
+#logoutButton:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px #f44336; /* Red border when focused */
 }
 @media only screen and (max-width: 1080px) {
     .message{

@@ -61,11 +61,13 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 #logoutButton {
-            padding: 0px 400px;
-            background-color: black;
+            background-color: white;
             color: white;
             border: none;
             cursor: pointer;
+        }
+#logoutButton:hover {
+            background-color: darkgreen;
         }
 .score_val {
 	color: gold;

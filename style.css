@@ -8,14 +8,14 @@
 	height: 100vh;
 	width: 100vw;
 	background: url('images/bg4.jpg') no-repeat center fixed !important;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .bird {
-	height: 8px;
-	width: 110px;
+	height: 100px;
+	width: 130px;
 	position: fixed;
 	top: 40vh;
 	left: 30vw;
@@ -34,9 +34,9 @@
 	position: absolute;
 	z-index: 10;
 	color: black;
-	top: 50%;
+	top: 30%;
 	left: 50%;
-	font-size: 3em;
+	font-size: 4em;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
@@ -50,11 +50,11 @@
 	position: fixed;
 	z-index: 10;
 	height: 10vh;
-	font-size: 5vh;
+	font-size: 10vh;
 	font-weight: 100;
 	color: white;
 	-webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: black;
 	top: 0;
 	left: 0;
 	margin: 10px;
@@ -63,25 +63,6 @@
 .score_val {
 	color: gold;
 	font-weight: bold;
-}
-#logoutButton {
-    background-color: black; /* Red background */
-    color: white; /* White text */
-    font-size: 10px;
-    font-weight:100;
-    border-radius: 10px;
-    border: 2px solid #f44336; /* Matching border */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-#logoutButton:hover {
-    background-color: #d32f2f; /* Darker red on hover */
-    border-color: #d32f2f; /* Darker border on hover */
-}
-
-#logoutButton:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 2px #f44336; /* Red border when focused */
 }
 @media only screen and (max-width: 1080px) {
     .message{

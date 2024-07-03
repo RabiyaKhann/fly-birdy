@@ -7,36 +7,9 @@
     <link rel="icon" type="image/png" href="https://art.pixilart.com/cd28182159871b6.png"/>
     <title>Flappy Bird Game</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-      if (!localStorage.getItem('signedIn')) {
-          window.location.href = 'signin.html';
-      }
-    </script>
     <script src="script.js" defer></script>
-    <style>
-        /* Responsive canvas */
-        canvas {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Responsive logout button */
-        #logoutButton {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 10px 20px;
-            background-color: red;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
     <div class="background"></div>
     <img src="images/bird2.png" alt="bird-img" class="bird" id="bird-1">
     <div class="message">
@@ -45,45 +18,16 @@
     <div class="score">
         <span class="score_title"></span>
         <span class="score_val"></span>
-        <button id="logoutButton">Logout</button>
+        <button id="logoutButton" style="position: absolute; background-color: black; color: white; border: none;">Logout</button>
     </div>
+</body>
     <script>
+      if (!localStorage.getItem('signedIn')) {
+          window.location.href = 'signin.html';
+      }
         document.getElementById('logoutButton').addEventListener('click', () => {
             localStorage.removeItem('signedIn');
-            window.location.href = 'signin.html';   });
-            document.addEventListener('DOMContentLoaded', (event) => {
-    const canvas = document.getElementById('gameCanvas');
-    const ctx = canvas.getContext('2d');
-
-    
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas(); // Initial call to set the size
-
-   
-    const flySound = new Audio('path/to/fly.mp3');
-    const scoreSound = new Audio('path/to/score.mp3');
-
-   
-    function playSound(audio) {
-        audio.currentTime = 0; 
-        audio.play();
-    }
-
-    // Touch event handling for mobile devices
-    canvas.addEventListener('touchstart', () => {
-        playSound(flySound);
-        
-    });
-
-   
-    canvas.addEventListener('click', () => {
-        playSound(flySound);
-    });
-});
+            window.location.href = 'signin.html';
+        });
     </script>
-</body>
 </html>

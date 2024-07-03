@@ -20,15 +20,8 @@
         <span class="score_val"></span>
     </div>
 </body>
-    
-      // Redirect to signin.html after a brief delay (e.g., 2 seconds)
-     //  setTimeout(function() {
-       //    window.location.href = 'signin.html';
-       //}); // 200 milliseconds = 0.2 seconds
     <script>
-      // Check if the user is signed in
       if (!localStorage.getItem('signedIn')) {
-          // Redirect to signin.html if not signed in
           window.location.href = 'signin.html';
       }
     </script>

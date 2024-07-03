@@ -13,7 +13,7 @@
 }
 
 .bird {
-    height: 8vh; /* Adjust height relative to viewport height */
+    height: 10vh; /* Adjust height relative to viewport height */
     width: auto; /* Automatically adjust width based on height */
     position: fixed;
     top: 40vh; /* Position vertically centered */
@@ -30,22 +30,22 @@
     background: radial-gradient(lightgreen 50%, green);
     border: 5px solid black;
 }
-
 .message {
-    position: absolute;
-    z-index: 10;
-    color: black;
-    top: 50%; /* Adjust vertical position */
-    left: 50%;
-    font-size: 3vw; /* Responsive font size */
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: white;
-    padding: 2vw; /* Responsive padding */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 5%;
+	position: absolute;
+	z-index: 10;
+	color: black;
+	top: 30%;
+	left: 50%;
+	font-size: 3vw;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
-
+.messageStyle{
+	background: white;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5%;
+}
 .score {
     position: fixed;
     z-index: 10;
@@ -69,7 +69,6 @@
 #logoutButton {
     padding: 1vh 2vh; /* Responsive padding */
     background-color: #000; /* Black background */
-    color: #fff; /* White text */
     font-size: 2vh; /* Responsive font size */
     font-color: white;
     font-weight: 100;

@@ -50,7 +50,7 @@
     position: fixed;
     z-index: 10;
     height: 10vh; /* Adjust height relative to viewport height */
-    font-size: 2vh; /* Responsive font size */
+    font-size: 3vh; /* Responsive font size */
     font-weight: 100;
     color: white;
     -webkit-text-stroke-width: 1px;
